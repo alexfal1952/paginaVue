@@ -12,7 +12,7 @@
             <!-- <b-nav-item href="#">Link</b-nav-item>
             <b-nav-item href="#" disabled>Disabled</b-nav-item> -->
             <b-nav-item to="/" exact exact-active-class="active">Inicio</b-nav-item>
-            <b-nav-item to="/about" exact exact-active-class="active">Foo</b-nav-item>
+            <b-nav-item to="/about" exact exact-active-class="active">Contactanos</b-nav-item>
           </b-navbar-nav>
         <!--  <b-navbar-nav class="ml-auto">
           </b-navbar-nav> -->
@@ -32,40 +32,40 @@
           </div>
         </div> -->
          <!-- Footer Elements -->
-  <div class="container">
+        <div class="container">
 
-    <!-- Social buttons -->
-    <ul class="list-unstyled list-inline text-center">
-      <li class="list-inline-item">
-        <a class="btn-floating btn-fb mx-1">
-          <i class="fab fa-facebook-f"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-tw mx-1">
-          <i class="fab fa-twitter"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-gplus mx-1">
-          <i class="fab fa-google-plus-g"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-li mx-1">
-          <i class="fab fa-linkedin-in"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-dribbble mx-1">
-          <i class="fab fa-dribbble"> </i>
-        </a>
-      </li>
-    </ul>
-    <!-- Social buttons -->
+          <!-- Social buttons -->
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-fb mx-1">
+                <i class="fab fa-facebook-f"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-tw mx-1">
+                <i class="fab fa-twitter"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-gplus mx-1">
+                <i class="fab fa-google-plus-g"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-li mx-1">
+                <i class="fab fa-linkedin-in"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-dribbble mx-1">
+                <i class="fab fa-dribbble"> </i>
+              </a>
+            </li>
+          </ul>
+          <!-- Social buttons -->
 
-  </div>
-  <!-- Footer Elements -->
+        </div>
+        <!-- Footer Elements -->
 
        <div class="footer-copyright text-center py-3" style="background-color:#d2d2d2;">© 2020 Copyright:
         <a href="#"> Alex Luis Opazo</a>
@@ -142,5 +142,14 @@ footer{
 }
 .imagenCatalogo:hover{
   filter: opacity(.5);
+}
+#wrapper3 {
+    background-image: url('https://drive.google.com/uc?id=1gS9MaaHeJkeXkbnkQw8NLS8BwauddwKz');
+    background-attachment: fixed;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    display: block;
 }
 </style>
