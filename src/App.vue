@@ -12,7 +12,9 @@
             <!-- <b-nav-item href="#">Link</b-nav-item>
             <b-nav-item href="#" disabled>Disabled</b-nav-item> -->
             <b-nav-item to="/" exact exact-active-class="active">Inicio</b-nav-item>
-            <b-nav-item to="/about" exact exact-active-class="active">Contactanos</b-nav-item>
+            <b-nav-item to="/galeria" exact exact-active-class="active">Galeria</b-nav-item>
+            <b-nav-item to="/contactanos" exact exact-active-class="active">Contactanos</b-nav-item>
+            <!-- <b-nav-item to="/galeriaDetalle" exact exact-active-class="active">Detalle</b-nav-item> -->
           </b-navbar-nav>
         <!--  <b-navbar-nav class="ml-auto">
           </b-navbar-nav> -->

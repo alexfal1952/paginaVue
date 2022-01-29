@@ -22,17 +22,17 @@
                 <form  v-on:submit.prevent="onSubmit"  class="php-email-form mt-4">
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                      <input type="text" name="name"  v-model="nombre" class="form-control" id="name" placeholder="Tu Nombre" required>
                     </div>
                     <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                      <input type="email" class="form-control"  v-model="email" name="email" id="email" placeholder="Tu Correo" required>
                     </div>
                   </div>
                   <div class="form-group mt-3">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    <input type="text" class="form-control" name="subject"  v-model="asunto" id="subject" placeholder="Asunto" required>
                   </div>
                   <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    <textarea class="form-control" name="message" rows="5"  v-model="mensaje" placeholder="Mensaje" required></textarea>
                   </div>
                   <div class="my-3">
                 <div>
@@ -63,6 +63,10 @@
   export default {
     data() {
       return {
+        nombre: '',
+        email: '',
+        asunto: '',
+        mensaje: '',
         slide: 0,
         sliding: null,
         dismissSecs: 2,
@@ -75,8 +79,14 @@
         this.dismissCountDown = dismissCountDown
       },
       showAlert() {
-        this.dismissCountDown = this.dismissSecs
-        this.show = false
+        this.timeoutSearch = setTimeout(() => {
+          this.dismissCountDown = this.dismissSecs
+          this.show = false
+          this.nombre = ''
+          this.email = ''
+          this.asunto = ''
+          this.mensaje = ''
+        }, 1000)
       },
       onSubmit () {
         this.show = true
